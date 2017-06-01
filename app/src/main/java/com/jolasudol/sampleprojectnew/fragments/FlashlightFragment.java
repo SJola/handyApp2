@@ -57,6 +57,7 @@ public class FlashlightFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_flashlight, container, false);
         ButterKnife.bind(this, view);
+        relativeLayout.setBackgroundResource(android.R.color.white);
         imageView = (ImageView) view.findViewById(R.id.flash);
         imageView.setImageResource(R.drawable.flash_off);
 
